@@ -97,4 +97,7 @@ a:hover {
         gap: 1rem;
     }
 
+    a{
+        align-self: flex-end;
+    }
 }
