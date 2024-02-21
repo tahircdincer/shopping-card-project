@@ -1,0 +1,89 @@
+:root {
+--bg-color: #a9a9a9;
+--btn-color: #ff3b3f;
+--secondary-color: red;
+--text-color: #efefef;
+}
+
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color:var(--bg-color) ;
+    font-family: "Bebas Neue", sans-serif;
+}
+.wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.image:hover {
+    opacity: 0.8;
+}
+
+/* Content Section */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+.image {
+    background: url(./img/pexels-leticia-ribeiro-2112648.jpg) no-repeat center center/cover;
+}
+a {
+    text-align: center;;
+    display: inline-block;
+    background-color: var(--btn-color);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.75rem 0.8rem;
+    border-radius: 5px;
+    width: 100%;
+    justify-self: center;
+}
+a:hover {
+    background-color: var(--secondary-color);
+    
+}
+.price-flex{
+    display: flex;
+    gap: 1rem;
+  height: 3rem;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: var(--bg-color);
+  width: 100%;  
+}
+.price-flex>p:nth-child(1) {
+    align-self: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    padding: 10px;
+}
+
+
+/* */
+@media (max-width: 600px)  {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+}
