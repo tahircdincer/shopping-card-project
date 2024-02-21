@@ -44,7 +44,8 @@ body {
     background: url(./img/pexels-leticia-ribeiro-2112648.jpg) no-repeat center center/cover;
 }
 a {
-    text-align: center;;
+    display: flex;
+    text-align: center;
     display: inline-block;
     background-color: var(--btn-color);
     color: white;
@@ -54,6 +55,9 @@ a {
     border-radius: 5px;
     width: 100%;
     justify-self: center;
+}
+a i {
+    margin-right: 1rem
 }
 a:hover {
     background-color: var(--secondary-color);
@@ -86,4 +90,14 @@ a:hover {
         grid-template-rows: repeat(2, 1fr);
     }
     
+}
+@media (max-width: 1000px) {
+    .content {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    a{
+        align-self: flex-end;
+    }
 }
